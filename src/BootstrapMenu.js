@@ -387,6 +387,7 @@ BootstrapMenu.prototype.open = function($openTarget, event) {
         $action.find('.actionName').html(
             _.isFunction(action.name) && action.name(targetData) || action.name
         );
+        $action.find('.icon-class')[0].className = 'fa fa-fw icon-class ' + (_.isFunction(action.iconClass) && action.iconClass(targetData) || action.iconClass);
 
         if (action.isEnabled && action.isEnabled(targetData) === false) {
             $action.addClass('disabled');
