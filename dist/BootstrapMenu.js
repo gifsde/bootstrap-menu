@@ -174,7 +174,7 @@
 	                $ul.append(
 	                    '<li role="presentation" data-action="'+actionId+'">' +
 	                    '<a href="#" role="menuitem">' +
-	                    '<i class="fa fa-fw fa-lg ' + (action.iconClass || '') + '"></i> ' +
+	                    '<i class="fa fa-fw fa-lg icon-class"></i> ' +
 	                    '<span class="actionName"></span>' +
 	                    '</a>' +
 	                    '</li>'
